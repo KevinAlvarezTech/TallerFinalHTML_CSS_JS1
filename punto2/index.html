@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller final de HTML5, CSS3 y JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="color-1.css" class="alternate-style-par" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style-impar" title="color-2" disabled>
+  </head>
+  <body>
+    <!-- Contenedor General -->
+    <div class="container">
+      <div class="header">
+        <h2>Lista de Frutas</h2>
+      </div>
+
+      <!-- Lista de Frutas-->
+      <div class="body">
+        <ul>
+          <li><i class="fa-solid fa-apple-whole color-impar"></i></li>
+          <li><i class="fa-solid fa-lemon color-par"></i></li>
+          <li><i class="fa-solid fa-pepper-hot color-impar"></i></li>
+          <li><i class="fa-solid fa-apple-whole color-par"></i></li>
+          <li><i class="fa-solid fa-lemon color-impar"></i></li>
+          <li><i class="fa-solid fa-pepper-hot color-par"></i></li>
+          <li><i class="fa-solid fa-apple-whole color-impar"></i></li>
+          <li><i class="fa-solid fa-lemon color-par"></i></li>
+          <li><i class="fa-solid fa-pepper-hot color-impar"></i></li>
+          <li><i class="fa-solid fa-apple-whole color-par"></i></li>
+        </ul>
+      </div>
+
+      <!-- Botones para cambiar el tema de las frutas -->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas"></i>
+        </div>
+        <h4>Color del tema</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveStyle('color-1')">Par</span>
+          <span class="color-2" onclick="setActiveStyle2('color-2')">Impar</span>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
